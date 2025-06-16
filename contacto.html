@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contacto - Andrés Calamaro</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+            <div class="logo">Andrés Calamaro</div>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="discografia.html">Discografía</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+            </nav>
+        </header>
+
+        <main class="contacto">
+            
+            <h2>Contacto</h2>
+            <p>¿Querés dejar un mensaje, compartir una historia o hacer una sugerencia? Completá el formulario:</p>
+
+            <form class="formulario-contacto">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required />
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+            <button type="submit">Enviar mensaje</button>
+            </form>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2025 Sitio no oficial de Andrés Calamaro. Todos los derechos reservados.</p>
+            <p>Seguinos en:
+                <a href="#">Instagram</a> |
+                <a href="#">Twitter</a> |
+                <a href="#">YouTube</a>
+            </p>
+        </footer>
+    </body>
+</html>

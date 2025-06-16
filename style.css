@@ -1,0 +1,295 @@
+body {
+  font-family: sans-serif;
+  background: url("img/calamaroFondo.jpg") no-repeat center center/cover;
+  color: white;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+*{
+    margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+
+
+/* footer */
+.footer {
+  background-color: rgba(0, 0, 0, 0.822);
+  color: #fff;
+  text-align: center;
+  padding: 20px 10px;
+  position: relative;
+  width: 100%;
+  font-size: 14px;
+
+}
+.footer a {
+  color: #fff;
+  text-decoration: underline;
+  margin: 0 5px;
+}
+
+
+
+/* INICIO */
+.frase {
+  text-align: center;
+  padding: 10px 20px;
+  font-size: 24px;
+  font-style:italic;
+}
+
+.frase cite {
+  display: block;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.bio {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 40px;
+  background-color: rgba(15, 15, 15, 0.742);
+  margin: 40px;
+  border-radius: 12px;
+}
+
+.bio img {
+  width: 200px;
+  border-radius: 12px;
+}
+
+.bio p {
+  font-size: 18px;
+}
+
+.destacado {
+  text-align: center;
+  padding: 30px 20px;
+  background-color: rgba(15, 15, 15, 0.742);
+  border-radius: 10px;
+  margin: 40px;
+}
+
+.destacado .btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #fff;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.hero {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.hero .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.594); 
+}
+
+
+
+
+/* DISCOGRAFIA */
+.discografia {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+}
+
+.discografia h2 {
+  margin-bottom: 40px;
+  font-size: 36px;
+}
+
+.grid-canciones {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.cancion {
+  background-color: rgba(255, 255, 255, 0.206);
+  padding: 30px;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+.cancion:hover {
+  transform: scale(1.05);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+/* GALERIA */
+.galeria {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #111111;
+  color: #fff;
+}
+
+.galeria h2 {
+  margin-bottom: 30px;
+  font-size: 2em;
+}
+
+.grid-galeria {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.grid-galeria img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.grid-galeria img:hover {
+  transform: scale(1.05);
+  opacity: 0.85;
+}
+
+
+/* CONTACTO */
+.contacto {
+  max-width: 600px;
+  margin: auto;
+  padding: 40px 20px;
+  color: white;
+  background-color: #111111b0;
+}
+
+.contacto h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.formulario-contacto {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.formulario-contacto label {
+  font-weight: bold;
+}
+
+textarea{
+  resize: none;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  background-color: #eee;
+  color: #333;
+}
+
+.formulario-contacto button {
+  padding: 12px;
+  background-color: #212121;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.formulario-contacto button:hover {
+  background-color: #555;
+}
+
+
+
+/* MENU HAMBURGUESA */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: relative;
+  z-index: 10;
+}
+
+.menu-icon {
+  font-size: 30px;
+  cursor: pointer;
+  display: block;
+  position: relative;
+  z-index: 1001;
+  color: white;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.nav-links {
+  position: fixed;
+  top: 0;
+  right: -300px;
+  height: 100vh;
+  width: 300px;
+  background-color: rgba(0, 0, 0, 0.95);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  transition: right 0.4s ease;
+  z-index: 1000;
+}
+
+#menu-toggle:checked + .menu-icon + .nav-links {
+  right: 0;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: bold;
+}
+
